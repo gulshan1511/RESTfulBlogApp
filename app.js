@@ -23,12 +23,6 @@ const Blog = mongoose.model("Blog",{
     created: {type: Date, default: Date.now}
 });
 
-// Blog.create({
-//     title: "Test",
-//     image: "https://img.indiefolio.com/fit-in/1100x0/filters:format(webp):fill(transparent)/project/body/ee7ded858e9648e36450501cfbcae610.jpg",
-//     body: "HELLO THIS IS A BLOG POST!"
-// });
-
 // RESTFUL ROUTES
 app.get("/", (req,res)=>{
     res.redirect("/blogs");
